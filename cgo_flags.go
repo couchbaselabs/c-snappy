@@ -4,4 +4,5 @@ package snappy
 
 // #cgo CXXFLAGS: -std=c++11
 // #cgo CPPFLAGS: -DHAVE_CONFIG_H -Iinternal
+// #cgo !windows CPPFLAGS: -DHAVE_SYS_MMAN_H
 import "C"
